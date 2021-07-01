@@ -32,6 +32,12 @@ class Faker implements FakerInterface
     protected ?FakerGenerator $generator = null;
 
     /**
+     * Faker locale providers.
+     * @var string
+     */
+    protected string $locale = FakerFactory::DEFAULT_LOCALE;
+
+    /**
      * @param array $config
      * @param Container|null $container
      */
@@ -114,9 +120,20 @@ class Faker implements FakerInterface
     public function generator(): FakerGenerator
     {
         if ($this->generator === null) {
-            $this->generator = FakerFactory::create(FakerFactory::DEFAULT_LOCALE);
+            $this->generator = FakerFactory::create($this->locale);
         }
 
         return $this->generator;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function setLocale(string $locale): FakerInterface
+    {
+        $this->locale = $locale;
+        $this->generator = null;
+
+        return $this;
     }
 }
