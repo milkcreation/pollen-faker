@@ -20,4 +20,13 @@ interface FakerInterface extends ConfigBagAwareTraitInterface, ContainerProxyInt
      * @return FakerGenerator
      */
     public function generator(): FakerGenerator;
+
+    /**
+     * Set Faker generator providers locale.
+     *
+     * @param string $locale
+     *
+     * @return static
+     */
+    public function setLocale(string $locale): FakerInterface;
 }

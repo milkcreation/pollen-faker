@@ -9,6 +9,13 @@ use Pollen\Container\BootableServiceProvider;
 class FakerServiceProvider extends BootableServiceProvider
 {
     /**
+     * @var string[]
+     */
+    protected $provides = [
+        FakerInterface::class
+    ];
+
+    /**
      * @inheritDoc
      */
     public function register(): void
