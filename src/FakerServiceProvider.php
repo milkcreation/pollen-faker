@@ -4,13 +4,10 @@ declare(strict_types=1);
 
 namespace Pollen\Faker;
 
-use Pollen\Container\BootableServiceProvider;
+use Pollen\Container\ServiceProvider;
 
-class FakerServiceProvider extends BootableServiceProvider
+class FakerServiceProvider extends ServiceProvider
 {
-    /**
-     * @var string[]
-     */
     protected $provides = [
         FakerInterface::class
     ];
