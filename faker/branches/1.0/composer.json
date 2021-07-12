@@ -1,6 +1,6 @@
 {
   "name": "pollen-solutions/faker",
-  "description": "Pollen Faker Component - Fake data generator.",
+  "description": "Pollen Solutions - Faker Component - Fake data generator.",
   "homepage": "https://www.presstify.com/pollen-solutions/faker/",
   "keywords": [
     "pollen-solutions",
@@ -8,18 +8,12 @@
     "faker",
     "lorem ipsum"
   ],
-  "time": "2021-07-01",
+  "time": "2021-07-09",
   "license": "MIT",
   "authors": [
     {
       "name": "Jordy Manner",
       "email": "jordy@presstify.com"
-    }
-  ],
-  "repositories": [
-    {
-      "type": "composer",
-      "url": "https://composer.presstify.com/pollen-solutions/"
     }
   ],
   "require": {
