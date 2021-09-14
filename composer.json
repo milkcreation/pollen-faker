@@ -1,14 +1,14 @@
 {
   "name": "pollen-solutions/faker",
   "description": "Pollen Solutions - Faker Component - Fake data generator.",
-  "homepage": "https://www.presstify.com/pollen-solutions/faker/",
+  "homepage": "https://github.com/milkcreation/pollen-faker.git",
   "keywords": [
     "pollen-solutions",
     "component",
     "faker",
     "lorem ipsum"
   ],
-  "time": "2021-07-09",
+  "time": "2021-09-14",
   "license": "MIT",
   "authors": [
     {
